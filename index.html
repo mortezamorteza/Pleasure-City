@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#080d19">
+    <meta name="description" content="AFTER DARK - فضای ناشناس برای گفتگو و اعترافات">
+
+    <title>Pleasure City</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <button class="icon-btn menu-btn" id="menuBtn">
+        <span class="menu-icon">☰</span>
+    </button>
+
+    <div class="brand">
+        <span class="brand-icon">◈</span>
+        <span>Pleasure City</span>
+    </div>
+
+    <button class="icon-btn profile-btn" data-page="account">
+        <span>◉</span>
+    </button>
+
+</header>
+
+
+<!-- DRAWER OVERLAY -->
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<!-- DRAWER -->
+
+<aside class="drawer" id="drawer">
+
+    <div class="drawer-header">
+
+        <div class="drawer-brand">
+            <div class="drawer-logo">◈</div>
+
+            <div>
+                <div class="drawer-title">AFTER DARK</div>
+                <div class="drawer-subtitle">Anonymous Space</div>
+            </div>
+        </div>
+
+        <button class="icon-btn close-btn" id="closeDrawer">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="drawer-user">
+
+        <div class="avatar">?</div>
+
+        <div class="drawer-user-info">
+            <strong>کاربر ناشناس</strong>
+            <small id="drawerUserId">در حال بارگذاری...</small>
+        </div>
+
+    </div>
+
+
+    <nav class="drawer-content">
+
+        <div class="drawer-section-title">صفحات</div>
+
+        <button class="drawer-link active" data-page="home">
+            <span>⌂</span>
+            <span>خانه</span>
+        </button>
+
+        <button class="drawer-link" data-page="confessions">
+            <span>▤</span>
+            <span>اعترافات</span>
+        </button>
+
+        <button class="drawer-link" data-page="chat">
+            <span>◌</span>
+            <span>چت</span>
+        </button>
+
+
+        <div class="drawer-divider"></div>
+
+        <div class="drawer-section-title">حساب کاربری</div>
+
+        <button class="drawer-link" data-page="account">
+            <span>◉</span>
+            <span>اکانت</span>
+        </button>
+
+        <button class="drawer-link" data-page="settings">
+            <span>⚙</span>
+            <span>تنظیمات</span>
+        </button>
+
+    </nav>
+
+
+    <div class="drawer-footer">
+        <span>AFTER DARK</span>
+        <span>VERSION 1.0</span>
+    </div>
+
+</aside>
+
+
+<!-- MAIN CONTENT -->
+
+<main class="main-container">
+
+
+    <!-- HOME PAGE -->
+
+    <section class="page active" id="page-home">
+
+        <div class="hero">
+
+            <div class="hero-badge">
+                <span class="online-dot"></span>
+                فضای ناشناس و آزاد
+            </div>
+
+            <h1>
+                چیزهایی هست که<br>
+                <span>نمی‌توانیم بگوییم.</span>
+            </h1>
+
+            <p>
+                جایی برای گفتن حرف‌هایی که شاید هیچ‌وقت
+                نتوانسته‌ای با کسی در میان بگذاری.
+            </p>
+
+            <button class="primary-btn" data-page="confessions">
+                مشاهده اعترافات
+                <span>←</span>
+            </button>
+
+        </div>
+
+
+        <div class="section-heading">
+
+            <div>
+                <h2>دنیای ناشناس</h2>
+                <p>بدون نیاز به معرفی خودت</p>
+            </div>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card" data-page="confessions">
+
+                <div class="feature-icon">▤</div>
+
+                <h3>اعترافات</h3>
+
+                <p>
+                    حرف‌هایی که می‌خواهی بدون معرفی خودت
+                    با دیگران به اشتراک بگذاری.
+                </p>
+
+                <span class="feature-arrow">←</span>
+
+            </div>
+
+
+            <div class="feature-card" data-page="chat">
+
+                <div class="feature-icon">◌</div>
+
+                <h3>چت ناشناس</h3>
+
+                <p>
+                    با افراد دیگر گفتگو کن، بدون اینکه
+                    مجبور باشی هویتت را معرفی کنی.
+                </p>
+
+                <span class="feature-arrow">←</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="info-icon">✦</div>
+
+            <div>
+                <h3>اینجا می‌توانی خودت باشی.</h3>
+
+                <p>
+                    هویت واقعی‌ات را با دیگران به اشتراک نگذار.
+                    به حریم خصوصی خودت و دیگران احترام بگذار.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONFESSIONS PAGE -->
+
+    <section class="page" id="page-confessions">
+
+        <div class="page-heading">
+
+            <div>
+                <h1>اعترافات</h1>
+                <p>حرف‌هایی از آدم‌های ناشناس</p>
+            </div>
+
+            <div class="heading-icon">▤</div>
+
+        </div>
+
+
+        <div class="filter-list">
+
+            <button class="filter-btn active" data-filter="all">
+                همه
+            </button>
+
+            <button class="filter-btn" data-filter="life">
+                زندگی
+            </button>
+
+            <button class="filter-btn" data-filter="love">
+                عشق
+            </button>
+
+            <button class="filter-btn" data-filter="secret">
+                رازها
+            </button>
+
+            <button class="filter-btn" data-filter="other">
+                متفرقه
+            </button>
+
+        </div>
+
+
+        <div class="confession-list" id="confessionList"></div>
+
+
+        <div class="empty-state hidden" id="emptyConfessions">
+            <div class="empty-icon">▤</div>
+            <h3>هنوز اعترافی وجود ندارد</h3>
+            <p>اولین نفری باش که چیزی به اشتراک می‌گذارد.</p>
+        </div>
+
+
+        <!-- ONLY ENTRY TO CREATE PAGE -->
+
+        <button class="floating-write-btn" id="openWritePage">
+            <span>＋</span>
+            نوشتن اعتراف
+        </button>
+
+    </section>
+
+
+
+    <!-- CONFESSION DETAIL PAGE -->
+
+    <section class="page" id="page-detail">
+
+        <div class="page-heading detail-heading">
+
+            <button class="back-btn" id="backToConfessions">
+                ←
+            </button>
+
+            <div>
+                <h1>جزئیات اعتراف</h1>
+                <p>متن کامل و گفتگوها</p>
+            </div>
+
+        </div>
+
+
+        <article class="detail-card">
+
+            <div class="detail-meta">
+
+                <div class="avatar small-avatar">?</div>
+
+                <div>
+                    <strong>کاربر ناشناس</strong>
+                    <small id="detailDate">همین حالا</small>
+                </div>
+
+                <span class="anonymous-tag">ناشناس</span>
+
+            </div>
+
+
+            <div class="detail-category" id="detailCategory">
+                زندگی
+            </div>
+
+
+            <h2 id="detailTitle"></h2>
+
+            <p class="detail-text" id="detailText"></p>
+
+
+            <div class="detail-actions">
+
+                <button class="like-btn" id="detailLike">
+                    ♡ <span id="detailLikes">0</span>
+                </button>
+
+                <span id="detailCommentsCount">۰ نظر</span>
+
+            </div>
+
+        </article>
+
+
+        <div class="comments-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>نظرات</h2>
+                    <p>دیدگاه کاربران درباره این اعتراف</p>
+                </div>
+            </div>
+
+
+            <div class="comment-list" id="commentList"></div>
+
+
+            <form class="comment-form" id="commentForm">
+
+                <textarea
+                    id="commentInput"
+                    placeholder="نظر خودت را بنویس..."
+                    maxlength="500"
+                    required
+                ></textarea>
+
+                <button class="primary-btn" type="submit">
+                    ارسال نظر
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WRITE CONFESSION PAGE -->
+
+    <section class="page" id="page-write">
+
+        <div class="page-heading">
+
+            <button class="back-btn" id="backFromWrite">
+                ←
+            </button>
+
+            <div>
+                <h1>اعتراف جدید</h1>
+                <p>حرفی که می‌خواهی به اشتراک بگذاری</p>
+            </div>
+
+        </div>
+
+
+        <form class="write-form" id="writeForm">
+
+            <label for="confessionTitle">
+                عنوان اعتراف
+            </label>
+
+            <input
+                type="text"
+                id="confessionTitle"
+                placeholder="یک عنوان کوتاه..."
+                maxlength="80"
+                required
+            >
+
+
+            <label for="confessionCategory">
+                دسته‌بندی
+            </label>
+
+            <select id="confessionCategory">
+
+                <option value="life">زندگی</option>
+                <option value="love">عشق</option>
+                <option value="secret">رازها</option>
+                <option value="other">متفرقه</option>
+
+            </select>
+
+
+            <label for="confessionText">
+                متن اعتراف
+            </label>
+
+            <textarea
+                id="confessionText"
+                placeholder="هر چیزی که می‌خواهی بگویی..."
+                maxlength="3000"
+                required
+            ></textarea>
+
+
+            <div class="form-footer">
+
+                <span>حداکثر ۳۰۰۰ کاراکتر</span>
+
+                <span id="textCounter">۰ / ۳۰۰۰</span>
+
+            </div>
+
+
+            <div class="privacy-notice">
+                <span>◈</span>
+
+                <p>
+                    نام و مشخصات واقعی خودت را در متن ننویس.
+                    اعترافات پیش از انتشار عمومی باید بررسی شوند.
+                </p>
+            </div>
+
+
+            <button class="primary-btn full-btn" type="submit">
+                انتشار اعتراف
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- CHAT PAGE -->
+
+    <section class="page" id="page-chat">
+
+        <div class="page-heading">
+
+            <div>
+                <h1>چت ناشناس</h1>
+                <p>گفتگو بدون معرفی هویت</p>
+            </div>
+
+            <div class="heading-icon">◌</div>
+
+        </div>
+
+
+        <div class="chat-status">
+            <span class="online-dot"></span>
+            محیط آزمایشی
+        </div>
+
+
+        <div class="chat-box">
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="chat-placeholder">
+                    <div>◌</div>
+                    <h3>گفتگو را شروع کن</h3>
+                    <p>این بخش فعلاً نمایشی است.</p>
+                </div>
+
+            </div>
+
+
+            <form class="chat-form" id="chatForm">
+
+                <input
+                    type="text"
+                    id="chatInput"
+                    placeholder="پیامت را بنویس..."
+                    maxlength="500"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">➤</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACCOUNT PAGE -->
+
+    <section class="page" id="page-account">
+
+        <div class="page-heading">
+
+            <div>
+                <h1>اکانت من</h1>
+                <p>اطلاعات حساب ناشناس تو</p>
+            </div>
+
+            <div class="heading-icon">◉</div>
+
+        </div>
+
+
+        <div class="account-card">
+
+            <div class="account-avatar">?</div>
+
+            <h2>کاربر ناشناس</h2>
+
+            <p>حساب ناشناس AFTER DARK</p>
+
+            <div class="account-id-box">
+
+                <span>شناسه حساب</span>
+
+                <strong id="accountId">در حال بارگذاری...</strong>
+
+                <button id="copyAccountId">کپی</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="account-info-card">
+
+            <div>
+                <strong>وضعیت حساب</strong>
+                <span class="status-text">محلی / آزمایشی</span>
+            </div>
+
+            <div>
+                <strong>نوع حساب</strong>
+                <span>ناشناس</span>
+            </div>
+
+            <div>
+                <strong>شناسه دستگاه</strong>
+                <span>ذخیره‌شده در مرورگر</span>
+            </div>
+
+        </div>
+
+
+        <div class="privacy-notice">
+            <span>ⓘ</span>
+
+            <p>
+                این نسخه هنوز به سرور متصل نیست.
+                اطلاعات حساب فقط در حافظه مرورگر ذخیره می‌شود.
+            </p>
+        </div>
+
+    </section>
+
+
+
+    <!-- SETTINGS PAGE -->
+
+    <section class="page" id="page-settings">
+
+        <div class="page-heading">
+
+            <div>
+                <h1>تنظیمات</h1>
+                <p>شخصی‌سازی تجربه کاربری</p>
+            </div>
+
+            <div class="heading-icon">⚙</div>
+
+        </div>
+
+
+        <div class="settings-group">
+
+            <div class="settings-title">نمایش</div>
+
+            <div class="setting-row">
+
+                <div>
+                    <strong>حالت تیره</strong>
+                    <small>استفاده از ظاهر تاریک سایت</small>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" id="darkModeSwitch" checked>
+                    <span></span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="settings-group">
+
+            <div class="settings-title">حریم خصوصی</div>
+
+            <div class="setting-row">
+
+                <div>
+                    <strong>نمایش شناسه حساب</strong>
+                    <small>شناسه حساب فقط برای خودت قابل مشاهده است</small>
+                </div>
+
+                <span class="setting-value">خصوصی</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="settings-group">
+
+            <div class="settings-title">درباره</div>
+
+            <div class="setting-row">
+                <div>
+                    <strong>نسخه برنامه</strong>
+                    <small>AFTER DARK</small>
+                </div>
+
+                <span class="setting-value">1.0.0</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<div class="toast" id="toast"></div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
